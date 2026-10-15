@@ -1,5 +1,5 @@
 # Nikah invitation: Paper Garden
-**Rahma & Hasanul Banna**, Monday 19 October 2026
+**Hasanul Banna & Rahma Mol**, Monday 19 October 2026, Methala Juma Masjid
 
 Pastel cut paper. You fly through paper arches, then pop-up flowers, a pop-up date and a paper flower blooming.
 
@@ -10,9 +10,10 @@ Pastel cut paper. You fly through paper arches, then pop-up flowers, a pop-up da
 2. Search for **EDIT THE DETAILS HERE**. Everything on the page reads from that block:
    - `time: ''`: the time in 24-hour form, e.g. `'11:30'`
    - `name` and `address` inside `venue`
-   - `maps`: a Google Maps link (shows an "Open in Maps" button)
+   - `maps`: a Google Maps link (shows an "Open in Maps" button). In Google Maps, find the masjid, tap **Share**, copy the link and paste it between the quotes.
    - `whatsapp`: number with country code, no + or spaces, e.g. `'919876543210'` (shows a "Confirm on WhatsApp" button)
-   - `brideFirst: false` shows Hasanul Banna's name first
+   - `brideFirst: true` shows Rahma Mol's name first (now the groom's name is first)
+   - `groomParents` and `brideParents`: shown under each name as "son of ..." / "daughter of ..."
 3. Change only what is between the quote marks and keep the commas.
 4. Tap **Commit changes**. The live page updates in about a minute. Refresh it to see the change.
 

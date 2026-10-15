@@ -108,6 +108,8 @@ body{color:var(--ink);font:400 18px/1.6 var(--serif)}
 .names{margin:clamp(10px,2vh,18px) 0 0;font-weight:400;position:relative}
 .names .nm{display:block;font:400 clamp(70px,20vw,150px)/1.1 var(--script);color:var(--rose)}
 .names .nm.long{font-size:clamp(54px,15vw,132px)}
+.names .par{display:block;font:italic 400 clamp(15px,3.9vw,20px)/1.35 var(--serif);color:var(--ink2);margin:clamp(0px,.3vh,4px) 0 clamp(4px,1vh,10px)}
+.names .par:empty{display:none}
 .names .amp{display:block;font:300 clamp(22px,5vw,32px)/1.3 var(--sans);letter-spacing:.3em;color:var(--sage3)}
 .invite{font-style:italic;font-size:clamp(18px,4.7vw,25px);line-height:1.5;color:var(--ink2);margin-top:clamp(14px,3vh,28px);position:relative}
 
@@ -211,7 +213,7 @@ html.lite .bloom{filter:none}
 <section class="scene ov" id="b1" style="--len:240vh" data-label="The Couple" data-bg="#fbf6ef" data-exit>
   <div class="stage" id="b1stage">
     <div class="eyebrow sc fade" style="--s:.05;--du:.1">Together with their families</div>
-    <h1 class="names"><span class="nm" id="nm1"></span><span class="amp sc fade" style="--s:.38;--du:.07">and</span><span class="nm" id="nm2"></span></h1>
+    <h1 class="names"><span class="nm" id="nm1"></span><span class="par sc fade" style="--s:.31;--du:.1" data-n="par1"></span><span class="amp sc fade" style="--s:.36;--du:.07">and</span><span class="nm" id="nm2"></span><span class="par sc fade" style="--s:.58;--du:.1" data-n="par2"></span></h1>
     <p class="invite" id="invite"></p>
   </div>
 </section>
@@ -288,16 +290,18 @@ html.lite .bloom{filter:none}
    ║  EDIT THE DETAILS HERE — the whole page reads from this block.   ║
    ╚══════════════════════════════════════════════════════════════════╝ */
 const N = {
-  bride: 'Rahma',
+  bride: 'Rahma Mol',
   groom: 'Hasanul Banna',
-  brideFirst: true,                 // false shows the groom's name first
+  brideFirst: false,                // true shows the bride's name first
+  groomParents: 'Sulfiker Musthafa & Fathima',   // shown under the groom's name as "son of ..." ('' hides it)
+  brideParents: 'Hassan & Khajeeda',             // shown under the bride's name as "daughter of ..." ('' hides it)
 
   date: '2026-10-19',               // YYYY-MM-DD
   time: '',                         // 24-hour, e.g. '11:30'. Leave '' until it is fixed.
   tz: '+05:30',                     // time zone of the venue (+05:30 = India)
 
   venue: {
-    name: '',                       // e.g. 'Masjid Al-Noor'
+    name: 'Methala Juma Masjid',
     address: '',                    // e.g. 'MG Road, Kochi'
     maps: '',                       // a Google Maps link; leave '' to hide the button
   },
@@ -325,6 +329,7 @@ const FINE = matchMedia('(pointer: fine)').matches;
    ?pages=0 brings back the older version where the animations follow the scroll */
 const PAGES = !REDUCED && QS.get('pages') !== '0';
 const NAMES = N.brideFirst ? [N.bride, N.groom] : [N.groom, N.bride];
+const PARENTS = (b => N.brideFirst ? b : [b[1], b[0]])([N.brideParents ? `daughter of ${N.brideParents}` : '', N.groomParents ? `son of ${N.groomParents}` : '']);
 const GUEST = (QS.get('to') || '').trim().slice(0, 60);
 function rng(seed) { return () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296); }
 
@@ -350,7 +355,7 @@ const D = (() => {
 })();
 
 function bindText() {
-  const T = { ...D, name1: NAMES[0], name2: NAMES[1], couple: `${NAMES[0]} & ${NAMES[1]}`, init1: NAMES[0][0], init2: NAMES[1][0], guest: GUEST ? `For ${GUEST}` : 'For our dearest family & friends' };
+  const T = { ...D, name1: NAMES[0], name2: NAMES[1], par1: PARENTS[0], par2: PARENTS[1], couple: `${NAMES[0]} & ${NAMES[1]}`, init1: NAMES[0][0], init2: NAMES[1][0], guest: GUEST ? `For ${GUEST}` : 'For our dearest family & friends' };
   $$('[data-n]').forEach(e => { const v = T[e.dataset.n]; if (v != null) e.textContent = v; });
   $$('[data-n-html]').forEach(e => { const v = T[e.dataset.nHtml]; if (v != null) e.innerHTML = v; });
   document.title = `${NAMES[0]} & ${NAMES[1]} · Nikah · ${D.day} ${D.month} ${D.year}`;
@@ -780,9 +785,9 @@ const DESIGN = {
     });
     h += `<circle r="16" fill="#d8b77e" stroke="#a5824c" stroke-width="1" class="sc" style="--s:.4;--du:.1;opacity:var(--e)"/>`;
     bl.innerHTML = h;
-    splitChars($('#nm1'), NAMES[0], 0.14, 0.035, 0.1); splitChars($('#nm2'), NAMES[1], 0.42, 0.018, 0.1);
+    splitChars($('#nm1'), NAMES[0], 0.14, 0.17 / Math.max(1, NAMES[0].length - 1), 0.1); splitChars($('#nm2'), NAMES[1], 0.4, 0.16 / Math.max(1, NAMES[1].length - 1), 0.1);
     if (NAMES[0].length > 8) $('#nm1').classList.add('long'); if (NAMES[1].length > 8) $('#nm2').classList.add('long');
-    splitWords($('#invite'), N.invite, 0.68, 0.8, 0.06);
+    splitWords($('#invite'), N.invite, 0.69, 0.8, 0.06);
     splitWords($('#verse'), N.verse, 0.18, 0.8, 0.07);
   },
   measure() { buildTunnel(); },
