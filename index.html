@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rahma &amp; Hasanul Banna · Nikah · Paper Garden</title>
+<meta name="description" content="With the blessings of Allah, you are invited to the Nikah of Rahma &amp; Hasanul Banna on Monday, 19 October 2026.">
+<meta property="og:title" content="Rahma &amp; Hasanul Banna · Nikah">
+<meta property="og:description" content="Monday, 19 October 2026 · Step into the garden">
+<meta name="theme-color" content="#fbf6ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+/* ===== shared scroll-scene engine styles ===== */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;-webkit-font-smoothing:antialiased}
+main{overflow-x:clip}
+#bg{position:fixed;inset:0;z-index:-3}
+.scene{position:relative;height:var(--len,300vh)}
+.scene.ov{margin-top:-100vh;margin-top:-100svh}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 22px}
+.sc{--e:clamp(0,calc((var(--p,0) - var(--s,0)) / var(--du,.12)),1)}
+.fade{opacity:var(--e);transform:translateY(calc((1 - var(--e)) * (1 - var(--e)) * 26px));filter:blur(calc((1 - var(--e)) * 6px))}
+.ch{display:inline-block;opacity:var(--e);transform:translateY(calc((1 - var(--e)) * (1 - var(--e)) * .5em)) rotate(calc((1 - var(--e)) * 9deg));filter:blur(calc((1 - var(--e)) * 7px));transform-origin:50% 100%}
+.wd{display:inline-block;white-space:nowrap}
+.w{display:inline-block;opacity:var(--e);transform:translateY(calc((1 - var(--e)) * 14px));filter:blur(calc((1 - var(--e)) * 4px))}
+.ln{fill:none;stroke:var(--line,currentColor);stroke-width:var(--lw,1);stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-dasharray:1 1;
+  stroke-dashoffset:calc(1 - clamp(0,calc((var(--p,0) - var(--s,0)) / var(--du,.2)),1))}
+.rv{opacity:0;transform:translateY(24px);filter:blur(4px);transition:opacity .8s ease,transform .9s cubic-bezier(.2,.75,.2,1),filter .8s ease;transition-delay:calc(var(--i,0) * .09s)}
+.rv.in{opacity:1;transform:none;filter:none}
+.flow{position:relative;padding:clamp(90px,16vh,160px) 22px;text-align:center}
+.cd{display:flex;justify-content:center;align-items:flex-start;gap:clamp(6px,2.6vw,30px)}
+.cd .u{min-width:clamp(62px,18vw,120px)}
+.cd b{display:flex;justify-content:center;overflow:hidden;height:1.06em}
+.cd b span{display:inline-block}
+.cd b span.roll{animation:roll .8s cubic-bezier(.2,.8,.2,1)}
+@keyframes roll{from{transform:translateY(80%);opacity:0;filter:blur(4px)}to{transform:none;opacity:1;filter:none}}
+.cd small{display:block;margin-top:10px;font-size:10.5px;letter-spacing:.34em;text-indent:.34em;text-transform:uppercase}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+#bar{position:fixed;left:0;top:0;height:2px;width:100%;z-index:40;transform-origin:left;transform:scaleX(0)}
+#nav{position:fixed;right:22px;top:50%;transform:translateY(-50%);z-index:40;display:none;flex-direction:column;gap:14px;list-style:none;margin:0;padding:0}
+#nav a{display:flex;align-items:center;justify-content:flex-end;gap:12px;text-decoration:none;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--nav,#777)}
+#nav a span{opacity:0;transform:translateX(6px);transition:opacity .35s,transform .35s}
+#nav a:hover span,#nav a.on span{opacity:1;transform:none}
+#nav a i{width:7px;height:7px;border:1px solid currentColor;border-radius:50%;transition:background .35s,transform .35s}
+#nav a.on i{background:currentColor;transform:scale(1.25)}
+#cur,#dot{position:fixed;left:0;top:0;z-index:100;pointer-events:none;display:none}
+#dot{width:4px;height:4px;margin:-2px 0 0 -2px;border-radius:50%;background:var(--dotc,#999)}
+#trail{position:fixed;inset:0;width:100%;height:100%;z-index:99;pointer-events:none}
+@media (pointer:fine){#cur,#dot{display:block} body.cur-on,body.cur-on a,body.cur-on button{cursor:none}}
+@media (min-width:900px){#nav{display:flex}}
+/* phones & tablets: same look, without the effects that make scrolling heavy */
+html.lite .fade,html.lite .ch,html.lite .w,html.lite .rv{filter:none!important}
+/* ===== phone page mode: one swipe = one page ===== */
+html.pages{scroll-snap-type:y mandatory}
+html.pages main>section{scroll-snap-align:start;scroll-snap-stop:always}
+html.pages .scene{height:100vh!important;height:100svh!important;margin-top:0!important}
+html.pages .stage{position:relative}
+html.pages .flow{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:max(56px,8vh);padding-bottom:max(70px,10vh)}
+html.pages .hint{display:none}
+#pager{position:fixed;left:50%;bottom:max(4px,env(safe-area-inset-bottom));padding:10px 18px;z-index:45;display:none;flex-direction:column;align-items:center;gap:7px;transform:translateX(-50%);pointer-events:none;
+  color:var(--nav,#777);font-size:10px;line-height:1;letter-spacing:.32em;text-indent:.32em;opacity:0;transition:opacity .5s ease}
+html.pages #pager{display:flex}
+#pager.show{opacity:.85;transition-delay:.35s;pointer-events:auto;cursor:pointer}
+#pager.show:hover{opacity:1}
+#pager i{width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);animation:nudge 1.6s ease-in-out infinite}
+#pager:not(.show) i{animation-play-state:paused}
+@keyframes nudge{0%,100%{translate:0 -3px;opacity:.5}50%{translate:0 3px;opacity:1}}
+html.rm .scene{height:auto;margin-top:0}
+html.rm .stage{position:relative;height:auto;min-height:100vh;padding:90px 22px}
+html.rm .rv{opacity:1;transform:none;filter:none}
+</style>
+<style>
+:root{--ivory:#fbf6ef;--blush:#f2d6cd;--blush2:#e8bfb2;--rose:#b9705f;--sage:#c9d1b9;--sage2:#a8b494;--sage3:#7d8a6a;--ink:#4b3a35;--ink2:#8a746c;--gold:#bf9b62;
+  --script:"Parisienne","Great Vibes",cursive;--sans:"Jost","Segoe UI",sans-serif;--serif:"Cormorant Garamond",Georgia,serif;--arabic:"Amiri","Traditional Arabic",serif;--tex:none;--line:var(--sage3)}
+html{background:var(--ivory)}
+body{color:var(--ink);font:400 18px/1.6 var(--serif)}
+::selection{background:rgba(201,133,119,.25)}
+#tex{position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:var(--tex);background-size:256px}
+#bar{background:linear-gradient(90deg,var(--sage2),var(--rose))}
+.eyebrow{font:400 11.5px/1.5 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--ink2);text-indent:.34em}
+.arabic{font-family:var(--arabic);direction:rtl}
+.script{font-family:var(--script);font-weight:400}
+
+/* ---------- 0. paper tunnel ---------- */
+#b0 .stage{padding:0}
+.tunnel{position:absolute;inset:0;overflow:hidden}
+.layer{position:absolute;left:50%;top:50%;will-change:transform,opacity;pointer-events:none}
+.layer svg{display:block;width:100%;height:100%;overflow:visible}
+.endcard{position:absolute;left:50%;top:50%;width:100vw;height:100svh;background:var(--ivory) var(--tex);background-size:256px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px;will-change:transform}
+.endcard .arabic{font-size:clamp(28px,7.6vw,46px);color:var(--sage3);line-height:1.7}
+.endcard .tr{font-style:italic;font-size:clamp(15px,3.8vw,18px);color:var(--ink2)}
+.endcard .sprig{width:120px;height:40px;margin:14px auto 0;overflow:visible}
+.b0-top{position:absolute;left:0;right:0;top:max(9vh,50px);z-index:40;color:var(--ivory);text-shadow:0 1px 10px rgba(60,70,40,.25)}
+.b0-top .eyebrow{color:#f6efe4}
+.b0-top .script{display:block;font-size:clamp(50px,13vw,92px);line-height:1.15}
+.hint{position:absolute;bottom:max(5vh,26px);left:0;right:0;z-index:40;display:flex;flex-direction:column;align-items:center;gap:10px;font:400 11px var(--sans);letter-spacing:.36em;text-indent:.36em;text-transform:uppercase;color:#f6efe4}
+.hint i{width:1px;height:40px;background:linear-gradient(#f6efe4,transparent);transform-origin:top;animation:cue 2.4s cubic-bezier(.6,0,.4,1) infinite}
+@keyframes cue{0%{transform:scaleY(0)}55%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+.opener{position:absolute;left:50%;top:50%;width:46vmin;height:56vmin;transform:translate(-50%,-50%);z-index:41;background:none;border:0;border-radius:50% 50% 8px 8px;cursor:pointer}
+
+/* ---------- 1. names with pop-up paper flowers ---------- */
+.pf{position:absolute;width:var(--sz,110px);height:var(--sz,110px);overflow:visible;filter:drop-shadow(0 6px 6px rgba(90,60,50,.22));
+  transform:translate(-50%,-50%) scale(var(--e)) rotate(calc((1 - var(--e)) * -70deg + var(--r,0deg)));opacity:calc(var(--e) * 4)}
+.names{margin:clamp(10px,2vh,18px) 0 0;font-weight:400;position:relative}
+.names .nm{display:block;font:400 clamp(70px,20vw,150px)/1.1 var(--script);color:var(--rose)}
+.names .nm.long{font-size:clamp(54px,15vw,132px)}
+.names .amp{display:block;font:300 clamp(22px,5vw,32px)/1.3 var(--sans);letter-spacing:.3em;color:var(--sage3)}
+.invite{font-style:italic;font-size:clamp(18px,4.7vw,25px);line-height:1.5;color:var(--ink2);margin-top:clamp(14px,3vh,28px);position:relative}
+
+/* ---------- 2. pop-up date ---------- */
+.pops{display:flex;flex-direction:column;align-items:center;gap:clamp(10px,2vh,18px);perspective:1000px}
+.pop{position:relative;background:var(--ivory) var(--tex);background-size:256px;border-radius:6px;padding:clamp(10px,2vh,18px) clamp(26px,7vw,46px);transform-origin:50% 100%;
+  transform:rotateX(calc((1 - var(--e)) * 88deg));opacity:clamp(0,calc(var(--e) * 5),1);box-shadow:0 calc(var(--e) * 16px) calc(var(--e) * 24px) -10px rgba(90,70,50,.35)}
+.pop::before{content:"";position:absolute;inset:6px;border:1px dashed rgba(125,138,106,.45);border-radius:3px;pointer-events:none}
+.pop.p1 .script{font-size:clamp(46px,12vw,80px);color:var(--rose);line-height:1.1}
+.pop.p2 b{display:block;font:300 clamp(110px,31vw,230px)/.95 var(--sans);color:var(--sage3);letter-spacing:-.04em}
+.pop.p3{font:400 clamp(16px,4.4vw,26px)/1.3 var(--sans);letter-spacing:.42em;text-indent:.42em;text-transform:uppercase;background:var(--blush)}
+.d-hijri{font-style:italic;font-size:clamp(16px,4vw,21px);color:var(--ink2);margin-top:clamp(14px,2.6vh,22px)}
+
+/* ---------- 3. verse ---------- */
+.leafdiv{width:90px;height:30px;margin:0 auto 16px;overflow:visible}
+.verse-ar{font-size:clamp(24px,6.4vw,42px);line-height:2.05;color:var(--sage3);max-width:860px;margin:0 auto clamp(14px,3vh,26px)}
+.verse{font:400 clamp(25px,6.6vw,48px)/1.32 var(--serif);max-width:19em;margin:0 auto;color:var(--ink)}
+.verse .w{opacity:calc(var(--in,1) * .14 + var(--e) * .86);filter:blur(calc((1 - var(--e)) * 1.5px));transform:none}
+.verse em{font-style:italic;color:var(--rose)}
+.ref{margin-top:clamp(18px,3.5vh,30px)}
+
+/* ---------- 4. countdown tags ---------- */
+.sec-title{font:400 clamp(48px,12.5vw,86px)/1.15 var(--script);color:var(--rose);display:block}
+.tags{display:flex;justify-content:center;gap:clamp(8px,3vw,26px);margin-top:clamp(26px,5vh,46px)}
+.tag{position:relative;width:clamp(70px,20vw,120px);padding:28px 6px 14px;background:var(--ivory) var(--tex);background-size:256px;border-radius:8px 8px 40px 40px;
+  box-shadow:0 14px 22px -12px rgba(90,70,50,.4);transform-origin:50% -60px;animation:sway 4s ease-in-out infinite alternate}
+.tag:nth-child(2){animation-delay:-1s;background-color:var(--blush)}.tag:nth-child(3){animation-delay:-2s}.tag:nth-child(4){animation-delay:-3s;background-color:var(--sage)}
+.tag::before{content:"";position:absolute;top:10px;left:50%;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;background:rgba(90,70,50,.25);box-shadow:inset 0 1px 2px rgba(0,0,0,.3)}
+.tag::after{content:"";position:absolute;bottom:100%;left:50%;width:1px;height:60px;margin-bottom:-14px;background:rgba(90,70,50,.45)}
+@keyframes sway{from{rotate:-3deg}to{rotate:3deg}}
+.tag b{display:flex;justify-content:center;overflow:hidden;height:1.06em;font:300 clamp(36px,10vw,64px)/1 var(--sans);color:var(--ink)}
+.tag small{display:block;margin-top:6px;font:400 10px var(--sans);letter-spacing:.3em;text-indent:.3em;text-transform:uppercase;color:var(--ink2)}
+
+/* ---------- 5. details ---------- */
+.card{max-width:560px;margin:0 auto;padding:clamp(40px,7vh,64px) clamp(22px,6vw,48px);background:var(--ivory) var(--tex);background-size:256px;border-radius:14px;position:relative;
+  box-shadow:0 30px 50px -30px rgba(90,70,50,.45),12px 14px 0 -2px var(--blush),-10px 22px 0 -4px var(--sage)}
+.card .script{font-size:clamp(46px,11vw,72px);color:var(--rose);line-height:1.1}
+.dl{text-align:left;margin-top:22px}
+.dl .row{display:grid;grid-template-columns:86px 1fr;gap:16px;padding:16px 4px;border-top:1px dashed rgba(125,138,106,.5)}
+.dl .k{font:500 10.5px/2 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--sage3)}
+.dl .v{font-size:clamp(19px,4.8vw,22px);line-height:1.45}
+.dl .v em{color:var(--ink2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 24px;border-radius:999px;border:1px solid var(--sage3);color:var(--sage3);background:transparent;
+  font:500 11.5px var(--sans);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .4s,color .4s}
+.btn:hover,.btn.solid{background:var(--sage3);color:var(--ivory)}
+.btns{margin-top:28px}
+
+/* ---------- 6. bloom ---------- */
+.bloom{width:min(70vw,360px);height:auto;overflow:visible;filter:drop-shadow(0 10px 12px rgba(90,60,50,.2));transform:rotate(calc(var(--p,0) * 40deg))}
+.bloom .pt{transform-box:fill-box;transform-origin:50% 100%;transform:rotate(var(--a)) scaleY(calc(.12 + var(--e) * .88)) scaleX(calc(.5 + var(--e) * .5))}
+.fin{position:relative;margin-top:clamp(10px,2vh,20px)}
+.fin .msg{font:italic 400 clamp(21px,5.4vw,32px)/1.4 var(--serif);max-width:18em;margin:0 auto;color:var(--ink)}
+.fin .nm2{display:block;font:400 clamp(46px,12vw,86px)/1.2 var(--script);color:var(--rose);margin-top:8px}
+.fin .ia{font-family:var(--arabic);font-size:clamp(22px,5vw,30px);color:var(--sage3);margin-top:10px}
+
+/* ---------- cursor: a small paper flower ---------- */
+#cur{width:44px;height:44px;margin:-22px 0 0 -22px}
+#cur svg{width:100%;height:100%;display:block;overflow:visible;filter:drop-shadow(0 2px 2px rgba(90,60,50,.3))}
+#cur .puff{transition:transform .6s cubic-bezier(.3,1.6,.45,1)}
+#cur .pe{fill:#f2d6cd;stroke:#b9705f;stroke-width:.8}
+#cur .core{fill:#bf9b62}
+#cur .halo{fill:none;stroke:var(--sage3);stroke-width:.6;stroke-dasharray:1.5 3;opacity:0;transform:scale(.55);transition:opacity .4s,transform .6s cubic-bezier(.3,1.7,.45,1)}
+#cur.big .puff{transform:scale(1.35)}#cur.big .halo{opacity:.9;transform:scale(1)}
+#cur.blown .puff{transform:scale(.4);transition:transform .12s}
+@media (min-width:900px){body{font-size:19px}}
+html.lite .pf{filter:none}
+html.lite .bloom{filter:none}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs><filter id="paperShadow" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+</svg>
+<div id="bg"></div><div id="tex"></div>
+<div id="bar" aria-hidden="true"></div>
+<nav aria-label="Sections"><ul id="nav"></ul></nav>
+<div id="cur" aria-hidden="true"><svg viewBox="-24 -24 48 48"><g id="curRot"><circle class="halo" r="21"/><g class="puff" id="curFlower"></g><circle class="core" r="3"/></g></svg></div>
+<div id="dot" aria-hidden="true"></div><canvas id="trail" aria-hidden="true"></canvas>
+
+<main>
+<!-- 0 · STEP INSIDE: fly through layers of cut paper -->
+<section class="scene" id="b0" style="--len:300vh" data-label="Invitation" data-bg="#fbf6ef" data-exit>
+  <div class="stage">
+    <div class="tunnel" id="tunnel">
+      <div class="endcard" id="endcard">
+        <div class="arabic" lang="ar">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        <div class="tr">In the name of Allah, the Most Gracious, the Most Merciful</div>
+        <svg class="sprig" viewBox="0 0 120 40" aria-hidden="true"><path d="M8 30C40 22 80 22 112 30" fill="none" stroke="#a8b494" stroke-width="1.2"/><g fill="#c9d1b9" stroke="#7d8a6a" stroke-width=".6"><ellipse cx="30" cy="20" rx="8" ry="3.4" transform="rotate(-25 30 20)"/><ellipse cx="50" cy="31" rx="8" ry="3.4" transform="rotate(20 50 31)"/><ellipse cx="72" cy="19" rx="8" ry="3.4" transform="rotate(-20 72 19)"/><ellipse cx="92" cy="31" rx="8" ry="3.4" transform="rotate(25 92 31)"/></g><circle cx="60" cy="24" r="4" fill="#e8bfb2" stroke="#b9705f" stroke-width=".6"/></svg>
+      </div>
+    </div>
+    <div class="b0-top" id="b0top">
+      <div class="eyebrow">With the blessings of Allah</div>
+      <span class="script">You’re Invited</span>
+    </div>
+    <button class="opener" data-open type="button" aria-label="Step inside the invitation"></button>
+    <div class="hint" id="hint">Scroll to step inside<i></i></div>
+  </div>
+</section>
+
+<!-- 1 · NAMES with pop-up paper flowers -->
+<section class="scene ov" id="b1" style="--len:240vh" data-label="The Couple" data-bg="#fbf6ef" data-exit>
+  <div class="stage" id="b1stage">
+    <div class="eyebrow sc fade" style="--s:.05;--du:.1">Together with their families</div>
+    <h1 class="names"><span class="nm" id="nm1"></span><span class="amp sc fade" style="--s:.38;--du:.07">and</span><span class="nm" id="nm2"></span></h1>
+    <p class="invite" id="invite"></p>
+  </div>
+</section>
+
+<!-- 2 · POP-UP DATE -->
+<section class="scene ov" id="b2" style="--len:240vh" data-label="The Date" data-bg="#eef1e6" data-exit>
+  <div class="stage">
+    <div class="eyebrow sc fade" style="--s:.03;--du:.08;margin-bottom:clamp(14px,3vh,26px)">Save the date</div>
+    <div class="pops">
+      <div class="pop p1 sc" style="--s:.08;--du:.16"><span class="script" data-n="weekday"></span></div>
+      <div class="pop p2 sc" style="--s:.26;--du:.18"><b data-n="day"></b></div>
+      <div class="pop p3 sc" style="--s:.46;--du:.16"><span data-n="month"></span> · <span data-n="year"></span></div>
+    </div>
+    <div class="d-hijri sc fade" style="--s:.66;--du:.1" data-n="hijri"></div>
+  </div>
+</section>
+
+<!-- 3 · THE VERSE -->
+<section class="scene ov" id="b3" style="--len:200vh" data-label="A Verse" data-bg="#f8ece6" data-exit>
+  <div class="stage">
+    <svg class="leafdiv sc fade" style="--s:.02;--du:.1" viewBox="0 0 90 30" aria-hidden="true"><path d="M4 15H86" stroke="#a8b494" stroke-width="1"/><g fill="#c9d1b9" stroke="#7d8a6a" stroke-width=".6"><ellipse cx="22" cy="10" rx="7" ry="3" transform="rotate(-25 22 10)"/><ellipse cx="68" cy="10" rx="7" ry="3" transform="rotate(25 68 10)"/></g><circle cx="45" cy="15" r="5" fill="#e8bfb2" stroke="#b9705f" stroke-width=".7"/></svg>
+    <div class="verse-ar arabic sc fade" lang="ar" style="--s:.06;--du:.16">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</div>
+    <p class="verse" id="verse"></p>
+    <div class="eyebrow ref sc fade" style="--s:.86;--du:.08">Surah Ar-Rum · 30:21</div>
+  </div>
+</section>
+
+<!-- 4 · COUNTDOWN on hanging paper tags -->
+<section class="flow" id="b4" data-label="Countdown" data-bg="#fbf6ef">
+  <div class="eyebrow rv">Counting the days</div>
+  <span class="sec-title rv" style="--i:1" data-cd-title>until our Nikah</span>
+  <div class="tags rv" style="--i:2">
+    <div class="tag"><b id="cdD"></b><small>Days</small></div>
+    <div class="tag"><b id="cdH"></b><small>Hours</small></div>
+    <div class="tag"><b id="cdM"></b><small>Minutes</small></div>
+    <div class="tag"><b id="cdS"></b><small>Seconds</small></div>
+  </div>
+</section>
+
+<!-- 5 · DETAILS -->
+<section class="flow" id="b5" data-label="Details" data-bg="#eef1e6">
+  <div class="card rv">
+    <div class="eyebrow">The Nikah of</div>
+    <div class="script" data-n="couple"></div>
+    <div class="dl">
+      <div class="row"><span class="k">Date</span><span class="v" data-n-html="dateLong"></span></div>
+      <div class="row"><span class="k">Time</span><span class="v" data-n-html="timeLong"></span></div>
+      <div class="row"><span class="k">Venue</span><span class="v" data-n-html="venueLong"></span></div>
+    </div>
+    <div class="btns">
+      <a class="btn solid" id="waBtn" target="_blank" rel="noopener" hidden>Confirm on WhatsApp</a>
+      <a class="btn" id="mapBtn" target="_blank" rel="noopener" hidden>Open in Maps</a>
+      <a class="btn" id="icsBtn">Add to Calendar</a>
+      <a class="btn" id="gcalBtn" target="_blank" rel="noopener">Google Calendar</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · A PAPER FLOWER BLOOMS -->
+<section class="scene" id="b6" style="--len:210vh" data-label="With Love" data-bg="#f8ece6">
+  <div class="stage">
+    <svg class="bloom" id="bloom" viewBox="-130 -130 260 260" aria-hidden="true"></svg>
+    <div class="fin">
+      <p class="msg sc fade" style="--s:.5;--du:.12">Your presence and your duas are the most precious gift we could ask for.</p>
+      <span class="nm2 sc fade" style="--s:.62;--du:.12" data-n="couple"></span>
+      <div class="ia sc fade" style="--s:.72;--du:.1" lang="ar">إن شاء الله</div>
+    </div>
+  </div>
+</section>
+</main>
+<script>
+'use strict';
+/* ╔══════════════════════════════════════════════════════════════════╗
+   ║  EDIT THE DETAILS HERE — the whole page reads from this block.   ║
+   ╚══════════════════════════════════════════════════════════════════╝ */
+const N = {
+  bride: 'Rahma',
+  groom: 'Hasanul Banna',
+  brideFirst: true,                 // false shows the groom's name first
+
+  date: '2026-10-19',               // YYYY-MM-DD
+  time: '',                         // 24-hour, e.g. '11:30'. Leave '' until it is fixed.
+  tz: '+05:30',                     // time zone of the venue (+05:30 = India)
+
+  venue: {
+    name: '',                       // e.g. 'Masjid Al-Noor'
+    address: '',                    // e.g. 'MG Road, Kochi'
+    maps: '',                       // a Google Maps link; leave '' to hide the button
+  },
+  whatsapp: '',                     // number with country code, no + or spaces, e.g. '919876543210'
+
+  invite: 'request the honour of your presence<br>and your duas at their Nikah',
+  verse: 'And of His signs is that He created for you, from among yourselves, spouses, that you may find *tranquillity* in them; and He placed between you *love* and *mercy*.',
+};
+
+/* =====================================================================
+   SHARED ENGINE — every animation on the page is a function of scroll.
+   ===================================================================== */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, t) => a + (b - a) * t;
+const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a)); return t * t * (3 - 2 * t); };
+const eOut = t => 1 - Math.pow(1 - clamp(t), 3);
+const eInOut = t => { t = clamp(t); return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+const pad = n => String(n).padStart(2, '0');
+const QS = new URLSearchParams(location.search);
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE = matchMedia('(pointer: fine)').matches;
+/* page mode on every device: one swipe or one scroll = one page, and that page then plays its animation by itself.
+   ?pages=0 brings back the older version where the animations follow the scroll */
+const PAGES = !REDUCED && QS.get('pages') !== '0';
+const NAMES = N.brideFirst ? [N.bride, N.groom] : [N.groom, N.bride];
+const GUEST = (QS.get('to') || '').trim().slice(0, 60);
+function rng(seed) { return () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296); }
+
+const D = (() => {
+  const [Y, M, Dd] = N.date.split('-').map(Number);
+  const WD = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const MO = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const noon = new Date(Date.UTC(Y, M - 1, Dd, 12)), wd = WD[noon.getUTCDay()];
+  let hijri = '';
+  try { hijri = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(noon).replace(/ AH$/, '') + ' AH'; } catch (e) {}
+  let t12 = '';
+  if (N.time) { const [h, mi] = N.time.split(':').map(Number); t12 = `${((h + 11) % 12) + 1}:${pad(mi || 0)} ${h < 12 ? 'AM' : 'PM'}`; }
+  const later = '<em>To be shared with you personally</em>';
+  const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  return {
+    Y, M, Dd, weekday: wd, day: String(Dd), month: MO[M - 1], year: String(Y), hijri, t12,
+    dateDots: `${pad(Dd)} · ${pad(M)} · ${Y}`, dateShort: `${pad(Dd)}.${pad(M)}.${String(Y).slice(2)}`,
+    dateLong: `${wd}, ${Dd} ${MO[M - 1]} ${Y}${hijri ? `<br><em>${hijri}</em>` : ''}`,
+    timeLong: t12 ? esc(t12) : later,
+    venueLong: N.venue.name ? `${esc(N.venue.name)}${N.venue.address ? `<br><em>${esc(N.venue.address)}</em>` : ''}` : later,
+    start: Date.parse(`${N.date}T${N.time || '00:00'}:00${N.tz}`),
+  };
+})();
+
+function bindText() {
+  const T = { ...D, name1: NAMES[0], name2: NAMES[1], couple: `${NAMES[0]} & ${NAMES[1]}`, init1: NAMES[0][0], init2: NAMES[1][0], guest: GUEST ? `For ${GUEST}` : 'For our dearest family & friends' };
+  $$('[data-n]').forEach(e => { const v = T[e.dataset.n]; if (v != null) e.textContent = v; });
+  $$('[data-n-html]').forEach(e => { const v = T[e.dataset.nHtml]; if (v != null) e.innerHTML = v; });
+  document.title = `${NAMES[0]} & ${NAMES[1]} · Nikah · ${D.day} ${D.month} ${D.year}`;
+}
+/* split text into glyphs that each start at their own slice of the scroll */
+function splitChars(el, text, s0, stagger, du, cls = 'ch') {
+  el.textContent = ''; let i = 0;
+  text.split(' ').forEach((word, wi) => {
+    if (wi) el.appendChild(document.createTextNode(' '));
+    const w = document.createElement('span'); w.className = 'wd';
+    for (const c of word) { const s = document.createElement('span'); s.className = cls + ' sc'; s.textContent = c; s.style.cssText = `--s:${(s0 + i++ * stagger).toFixed(3)};--du:${du}`; w.appendChild(s); }
+    el.appendChild(w);
+  });
+}
+function splitWords(el, html, s0, s1, du, cls = 'w') {
+  const words = html.split(/(<br>|\s+)/).filter(x => x && !/^\s+$/.test(x)); el.textContent = '';
+  const n = words.filter(w => w !== '<br>').length; let i = 0;
+  words.forEach(w => {
+    if (w === '<br>') { el.appendChild(document.createElement('br')); return; }
+    const s = document.createElement('span'); s.className = cls + ' sc'; s.style.cssText = `--s:${(s0 + (s1 - s0) * i++ / Math.max(1, n - 1)).toFixed(3)};--du:${du}`;
+    const m = w.match(/^\*(.+)\*([^*]*)$/);
+    if (m) { const e = document.createElement('em'); e.textContent = m[1]; s.appendChild(e); s.appendChild(document.createTextNode(m[2])); } else s.textContent = w;
+    el.appendChild(s); el.appendChild(document.createTextNode(' '));
+  });
+}
+const NS = 'http://www.w3.org/2000/svg', f1 = n => n.toFixed(1);
+function svgEl(tag, at, par) { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); if (par) par.appendChild(e); return e; }
+function line(g, d, s, du, cls = 'ln') { return svgEl('path', { d, class: cls, pathLength: 1, style: `--s:${s.toFixed(3)};--du:${du.toFixed(3)}` }, g); }
+function paperTexture() {
+  const S = 256, c = document.createElement('canvas'); c.width = c.height = S;
+  const x = c.getContext('2d'), img = x.createImageData(S, S), d = img.data;
+  for (let i = 0; i < S * S; i++) { const r = (Math.random() + Math.random() + Math.random()) / 1.5 - 1, L = r > 0; d[i * 4] = L ? 255 : 100; d[i * 4 + 1] = L ? 255 : 90; d[i * 4 + 2] = L ? 250 : 70; d[i * 4 + 3] = Math.abs(r) * (L ? 22 : 18); }
+  x.putImageData(img, 0, 0); return `url(${c.toDataURL('image/png')})`;
+}
+
+/* ---------- scroll: smoothed wheel (desktop) + guided scroll ---------- */
+const docMax = () => document.documentElement.scrollHeight - innerHeight;
+/* native scrolling everywhere: the browser's own wheel smoothing and touch momentum feel the most natural */
+const Smooth = { step() {}, stop() {} };
+const Auto = (() => {
+  let job = null; const cancel = () => { job = null; };
+  addEventListener('touchstart', cancel, { passive: true }); addEventListener('keydown', cancel);
+  return {
+    cancel,
+    to(y, dur) { Smooth.stop(); const from = scrollY, to = clamp(y, 0, docMax()); job = { from, to, t0: performance.now(), dur: dur || clamp(Math.abs(to - from) / innerHeight * 0.9, 0.8, 3.4) }; },
+    step() { if (!job) return; const t = (performance.now() - job.t0) / 1000; scrollTo(0, lerp(job.from, job.to, eInOut(t / job.dur))); if (t >= job.dur) job = null; },
+  };
+})();
+
+/* ---------- sections ---------- */
+const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+let SC = [], VW = innerWidth, VH = innerHeight, ys = scrollY, force = true;
+/* a probe exactly 100svh tall (the stage height); unlike innerHeight it ignores a phone's address bar sliding away */
+const VHP = document.createElement('div'); VHP.style.cssText = 'position:fixed;left:0;top:0;width:0;height:100vh;height:100svh;visibility:hidden;pointer-events:none';
+const LITE = !FINE;                                // touch screens: skip the costly blur/blend effects (computers keep them all)
+const scene = id => SC.find(s => s.el.id === id);
+function collect() {
+  SC = $$('main > section').map(el => ({ el, id: el.id, stage: $('.stage', el), top: 0, h: 0, bg: hex(el.dataset.bg || '#ffffff'),
+    pinned: el.classList.contains('scene'), ov: el.classList.contains('ov'), exit: el.hasAttribute('data-exit') }));
+}
+function measure() {
+  VW = innerWidth; VH = VHP.offsetHeight || innerHeight; force = true;
+  for (const s of SC) { const r = s.el.getBoundingClientRect(); s.top = r.top + scrollY; s.h = r.height; }
+  DMAX = docMax();   // page length: measured once here, never inside the animation loop (that forced a full re-layout every frame)
+  if (DESIGN.measure) DESIGN.measure();
+}
+const progressOf = s => clamp((ys - s.top) / Math.max(1, s.h - VH));
+let lastBg = '', lastDark = null;
+function upBackground(y) {
+  let c = SC[0].bg;
+  for (let i = 1; i < SC.length; i++) { const [a, w] = PAGES ? [0.75, 0.5] : SC[i].ov ? [0.25, 0.35] : [0.7, 0.45], k = smooth(0, 1, (y + VH * a - SC[i].top) / (VH * w)); if (k > 0) c = c.map((v, j) => lerp(v, SC[i].bg[j], k)); }
+  const css = `rgb(${c.map(v => Math.round(v)).join(',')})`;
+  if (css === lastBg) return; lastBg = css;
+  $('#bg').style.background = css;
+  const dark = (0.299 * c[0] + 0.587 * c[1] + 0.114 * c[2]) / 255 < 0.5, C = DESIGN.chrome || {};
+  if (dark === lastDark) return;   // page-wide settings change only when light/dark flips, not on every frame of the blend
+  lastDark = dark;
+  document.documentElement.classList.toggle('dark', dark);
+  document.documentElement.style.setProperty('--nav', dark ? (C.navDark || '#ddd') : (C.navLight || '#666'));
+  document.documentElement.style.setProperty('--dotc', dark ? (C.dotDark || '#fff') : (C.dotLight || '#333'));
+  const m = $('meta[name=theme-color]'); if (m) m.setAttribute('content', css);
+}
+const navLinks = [];
+function buildNav() {
+  SC.forEach(s => {
+    if (!s.el.dataset.label) return;
+    const li = document.createElement('li'), a = document.createElement('a'); a.href = '#' + s.id;
+    a.innerHTML = '<span></span><i></i>'; a.firstChild.textContent = s.el.dataset.label;
+    a.addEventListener('click', e => { e.preventDefault(); if (PAGES) return Pages.go(s); Auto.to(s.pinned && s !== SC[0] ? s.top + (s.h - VH) * 0.8 : s.top); });
+    li.appendChild(a); $('#nav').appendChild(li); navLinks.push({ a, s });
+  });
+}
+let lastBar = '', lastNav = null, DMAX = 1;
+function upChrome(y) {
+  const b = `scaleX(${clamp(y / Math.max(1, DMAX)).toFixed(3)})`; if (b !== lastBar) { lastBar = b; $('#bar').style.transform = b; }
+  const mid = y + VH * 0.5; let on = null; for (const n of navLinks) if (mid >= n.s.top) on = n;
+  if (on !== lastNav) { lastNav = on; for (const n of navLinks) n.a.classList.toggle('on', n === on); }
+}
+
+/* ---------- countdown, calendar, whatsapp, maps ---------- */
+function setDigits(el, str) {
+  if (!el) return; const prev = el.dataset.v || ''; if (prev === str) return; el.dataset.v = str; el.textContent = '';
+  for (let i = 0; i < str.length; i++) { const s = document.createElement('span'); s.textContent = str[i]; if (prev.length !== str.length || prev[i] !== str[i]) s.className = 'roll'; el.appendChild(s); }
+}
+function tick() {
+  let ms = Math.max(0, D.start - Date.now());
+  const d = Math.floor(ms / 864e5); ms -= d * 864e5; const h = Math.floor(ms / 36e5); ms -= h * 36e5; const m = Math.floor(ms / 6e4); ms -= m * 6e4;
+  setDigits($('#cdD'), String(d)); setDigits($('#cdH'), pad(h)); setDigits($('#cdM'), pad(m)); setDigits($('#cdS'), pad(Math.floor(ms / 1e3)));
+  if (Date.now() >= D.start) $$('[data-cd-title]').forEach(e => { e.textContent = 'Alhamdulillah'; });
+  setTimeout(tick, 1000 - (Date.now() % 1000) + 5);
+}
+function setupLinks() {
+  const couple = `${NAMES[0]} & ${NAMES[1]}`, title = `Nikah of ${couple}`, q = encodeURIComponent;
+  const z = ms => new Date(ms).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const ymd = N.date.replace(/-/g, ''), next = new Date(Date.UTC(D.Y, D.M - 1, D.Dd + 1)).toISOString().slice(0, 10).replace(/-/g, '');
+  const loc = [N.venue.name, N.venue.address].filter(Boolean).join(', '), esc = s => s.replace(/\\/g, '\\\\').replace(/([,;])/g, '\\$1');
+  const when = N.time ? [`DTSTART:${z(D.start)}`, `DTEND:${z(D.start + 2 * 36e5)}`] : [`DTSTART;VALUE=DATE:${ymd}`, `DTEND;VALUE=DATE:${next}`];
+  const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Nikah Invitation//EN', 'BEGIN:VEVENT', `UID:${ymd}-nikah@invitation`, `DTSTAMP:${z(Date.now())}`, ...when,
+    `SUMMARY:${esc(title)}`, loc ? `LOCATION:${esc(loc)}` : '', 'END:VEVENT', 'END:VCALENDAR'].filter(Boolean).join('\r\n');
+  const a = $('#icsBtn'); if (a) { a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })); a.download = 'nikah.ics'; }
+  const g = $('#gcalBtn'); if (g) g.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${q(title)}&dates=${N.time ? `${z(D.start)}/${z(D.start + 2 * 36e5)}` : `${ymd}/${next}`}${loc ? `&location=${q(loc)}` : ''}`;
+  if (N.venue.maps && $('#mapBtn')) { $('#mapBtn').href = N.venue.maps; $('#mapBtn').hidden = false; }
+  if (N.whatsapp && $('#waBtn')) {
+    const msg = `Assalamu alaikum! ${GUEST ? GUEST + ' here. ' : ''}Insha'Allah I will be at the Nikah of ${couple} on ${D.weekday}, ${D.day} ${D.month} ${D.year}.`;
+    $('#waBtn').href = `https://wa.me/${N.whatsapp.replace(/\D/g, '')}?text=${q(msg)}`; $('#waBtn').hidden = false;
+  }
+}
+const tweens = [];
+function tweenP(el, dur, delay = 0) { tweens.push({ el, t: -delay, dur }); }
+function setupReveals() {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return; e.target.classList.add('in'); io.unobserve(e.target);
+    if (e.target.matches('[data-tween]')) tweenP(e.target, 2.6, 0.2);
+  }), { threshold: 0.2 });
+  $$('.rv, [data-tween]').forEach(e => io.observe(e));
+}
+
+/* ---------- dust trail + cursor ---------- */
+const Trail = (() => {
+  const cv = $('#trail'), c = cv.getContext('2d'), P = []; let W = 1, H = 1, dirty = false, time = 0;
+  function resize() { const d = Math.min(devicePixelRatio || 1, 2); W = innerWidth; H = innerHeight; cv.width = W * d; cv.height = H * d; c.setTransform(d, 0, 0, d, 0, 0); }
+  function dust(x, y, sp = 24) {
+    if (P.length > 240) P.shift();
+    const cols = (DESIGN.dust && DESIGN.dust.colors) || ['#c9b07a', '#f6eedd'];
+    P.push({ x, y, vx: (Math.random() - 0.5) * sp, vy: (Math.random() - 0.5) * sp, life: 0, max: 1.8 + Math.random() * 2,
+      r: (0.55 + Math.random() * Math.random() * 1.9) * ((DESIGN.dust && DESIGN.dust.size) || 1), col: cols[(Math.random() * cols.length) | 0], tw: 5 + Math.random() * 10, fall: 4 + Math.random() * 10 }); dirty = true;
+  }
+  function blow(x, y, n = 46) { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28, r = Math.random() * 10; dust(x + Math.cos(a) * r, y + Math.sin(a) * r, 120 + Math.random() * 160); } }
+  function step(dt) {
+    if (!P.length && !dirty) return;
+    time += dt; c.clearRect(0, 0, W, H); dirty = P.length > 0; c.globalCompositeOperation = (DESIGN.dust && DESIGN.dust.blend) || 'source-over';
+    const wind = 9 + Math.sin(time * 0.4) * 7;
+    for (let i = P.length - 1; i >= 0; i--) {
+      const p = P[i]; p.life += dt; if (p.life > p.max) { P.splice(i, 1); continue; }
+      const k = p.life / p.max, relax = 1 - Math.exp(-dt * 1.1);
+      p.vx += (wind - p.vx) * relax; p.vy += (p.fall - p.vy) * relax; p.x += p.vx * dt * 0.6; p.y += p.vy * dt;
+      c.globalAlpha = Math.min(1, p.life * 5) * (1 - k) * (0.55 + 0.45 * Math.sin(p.life * p.tw));
+      c.fillStyle = p.col; c.beginPath(); c.arc(p.x, p.y, p.r, 0, 6.28); c.fill();
+    }
+    c.globalAlpha = 1; c.globalCompositeOperation = 'source-over';
+  }
+  return { resize, dust, blow, step, get count() { return P.length; } };
+})();
+const CUR = { x: -100, y: -100, rx: -100, ry: -100, on: false, rot: 0, lean: 0, dist: 0, lx: 0, ly: 0, vx: 0 };
+addEventListener('pointerdown', e => {
+  if (REDUCED) return;
+  if (e.pointerType !== 'mouse') { Trail.blow(e.clientX, e.clientY, 36); return; }
+  Trail.blow(e.clientX, e.clientY);
+  const cur = $('#cur'); cur.classList.add('blown'); setTimeout(() => cur.classList.remove('blown'), 420);
+}, { passive: true });
+if (FINE) {
+  addEventListener('pointermove', e => {
+    if (e.pointerType !== 'mouse') return;
+    CUR.x = e.clientX; CUR.y = e.clientY;
+    if (!CUR.on) { CUR.on = true; CUR.rx = CUR.lx = CUR.x; CUR.ry = CUR.ly = CUR.y; document.body.classList.add('cur-on'); }
+    CUR.dist += Math.hypot(CUR.x - CUR.lx, CUR.y - CUR.ly); CUR.lx = CUR.x; CUR.ly = CUR.y;
+    if (CUR.dist > 14 && !REDUCED) { CUR.dist = 0; for (let i = 0; i < 2; i++) { const a = Math.random() * 6.28, r = 6 + Math.random() * 12; Trail.dust(CUR.rx + Math.cos(a) * r, CUR.ry + Math.sin(a) * r, 30); } }
+  }, { passive: true });
+  addEventListener('pointerover', e => $('#cur').classList.toggle('big', !!e.target.closest('a,button,[data-open]')));
+  document.addEventListener('mouseleave', () => { $('#cur').style.opacity = $('#dot').style.opacity = 0; });
+  document.addEventListener('mouseenter', () => { $('#cur').style.opacity = $('#dot').style.opacity = 1; });
+}
+
+
+/* Line drawings get their own progress value, written only while they are actually drawing.
+   Once finished they stop listening to the scroll, so hundreds of strokes are not re-styled every frame. */
+function collectArt() {
+  return $$('.stage svg').filter(svg => svg.querySelector('.ln') && !svg.style.getPropertyValue('--p') && !svg.closest('[style*="--p"]:not(.stage)')).map(svg => {
+    let lo = 1, hi = 0;
+    for (const e of svg.querySelectorAll('[style*="--s"]')) { const s0 = parseFloat(e.style.getPropertyValue('--s')) || 0, du = parseFloat(e.style.getPropertyValue('--du')) || 0.2; lo = Math.min(lo, s0); hi = Math.max(hi, s0 + du + 0.15); }
+    svg.style.setProperty('--p', 0);
+    return { svg, stage: svg.closest('.stage'), lo: Math.max(0, lo - 0.01), hi: Math.min(1, hi), last: 0 };
+  });
+}
+function upArt(art, stage, p) {
+  for (const a of art) { if (a.stage !== stage) continue; const v = clamp(p, a.lo, a.hi); if (Math.abs(v - a.last) > 0.0004 || (v !== a.last && (v === a.lo || v === a.hi))) { a.last = v; a.svg.style.setProperty('--p', v.toFixed(4)); } }
+}
+
+
+/* ---------- phone page mode: one swipe = one page, and the page then plays its animation by itself ---------- */
+const Pages = (() => {
+  let glide = null;
+  const endGlide = () => { glide = null; document.documentElement.style.scrollSnapType = ''; };
+  const tall = (s, dir) => s.h > VH + 4 && (dir > 0 ? scrollY + VH < s.top + s.h - 2 : scrollY > s.top + 2);   // a page taller than the screen scrolls normally until its edge
+  const step1 = dir => { const c = cur || SC[0], n = SC[SC.indexOf(c) + dir]; if (n) Pages.go(n); };
+  function inputs() {
+    /* mouse wheel & trackpad: one notch or one flick = one page (the browser's own snapping slides a single notch back) */
+    let acc = 0, lastW = 0, lockUntil = 0;
+    addEventListener('wheel', e => {
+      if (e.ctrlKey) return;   // pinch / ctrl-zoom
+      const now = performance.now(), dy = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? VH : 1), gap = now - lastW; lastW = now;
+      if (!dy || tall(cur || SC[0], Math.sign(dy))) return;
+      e.preventDefault();
+      if (glide || now < lockUntil) { lockUntil = Math.max(lockUntil, now + 240); acc = 0; return; }   // a flick's long tail of events still counts as that one flick
+      if (gap > 240) acc = 0; acc += dy; if (Math.abs(acc) < 24) return;
+      lockUntil = now + 900; step1(Math.sign(acc)); acc = 0;
+    }, { passive: false });
+    /* keyboard: arrows, Page Up/Down, Space, Home/End */
+    addEventListener('keydown', e => {
+      if (e.altKey || e.ctrlKey || e.metaKey) return;
+      const k = e.key, onCtl = /^(A|BUTTON|INPUT|TEXTAREA|SELECT)$/.test((document.activeElement || {}).tagName || '');
+      let dir = k === 'ArrowDown' || k === 'PageDown' ? 1 : k === 'ArrowUp' || k === 'PageUp' ? -1 : k === ' ' && !onCtl ? (e.shiftKey ? -1 : 1) : 0;
+      if (k === 'Home' || k === 'End') { e.preventDefault(); return Pages.go(k === 'Home' ? SC[0] : SC[SC.length - 1]); }
+      if (!dir || tall(cur || SC[0], dir)) return;
+      e.preventDefault(); if (!glide) step1(dir);
+    });
+    addEventListener('touchstart', () => { if (glide) endGlide(); }, { passive: true });   // a finger always wins over a glide
+    pager.addEventListener('click', () => step1(1));
+  }
+  let cur = null, pager = null, ART = [];
+  const cfg = s => (DESIGN.pages && DESIGN.pages[s.id]) || {};
+  const vis = s => Math.max(0, Math.min(ys + VH, s.top + s.h) - Math.max(ys, s.top));
+  function endOf(s) {   // the moment everything on the page has arrived
+    let hi = 0.3;
+    for (const e of s.stage.querySelectorAll('[style*="--s"]')) hi = Math.max(hi, (parseFloat(e.style.getPropertyValue('--s')) || 0) + (parseFloat(e.style.getPropertyValue('--du')) || 0.12));
+    return Math.min(0.96, hi + 0.02);
+  }
+  function setP(s, p) {
+    s.pv = p; s.stage.style.setProperty('--p', p.toFixed(4)); upArt(ART, s.stage, p);
+    const hook = DESIGN.hooks && DESIGN.hooks[s.id]; if (hook) hook(p, s);
+  }
+  function upPager() {
+    if (!pager || !cur) return; const i = SC.indexOf(cur), last = i === SC.length - 1;
+    pager.firstChild.textContent = `${pad(i + 1)} / ${pad(SC.length)}`;
+    pager.classList.toggle('show', !last && (!cur.anim || cur.anim.fin));   // the swipe cue appears once the page has finished playing
+  }
+  function start(s) {
+    cur = s; s.played = true;
+    if (s.stage && s.pinned && !s.anim) {
+      const c = cfg(s), to = c.to != null ? c.to : endOf(s);
+      s.anim = { t: -(c.delay != null ? c.delay : 0.2), dur: c.dur || clamp(1.2 + to * 2.6, 1.6, 4), from: s.pv || 0, to, live: !!c.live, lin: !!c.linear, fin: false };
+    }
+    upPager();
+  }
+  function off(s) {   // fully off screen: rewind it, so it plays again on the way back
+    s.played = false; s.anim = null;
+    if (s.stage && s.pinned) setP(s, 0);
+  }
+  return {
+    init(art) {
+      ART = art;
+      pager = document.createElement('div'); pager.id = 'pager'; pager.setAttribute('aria-hidden', 'true');
+      pager.innerHTML = '<span></span><i></i>'; document.body.appendChild(pager); inputs();
+      for (const s of SC) if (s.stage && s.pinned) setP(s, 0);
+    },
+    sync() {
+      let best = null, bv = 0;
+      for (const s of SC) { const v = vis(s); if (v > bv + 1) { bv = v; best = s; } if (v <= 0 && s.played) off(s); }
+      if (best && best !== cur && bv >= 0.6 * Math.min(VH, best.h)) start(best);
+    },
+    step(dt) {
+      for (const s of SC) {
+        const a = s.anim; if (!a) continue;
+        a.t += dt; if (a.t < 0) continue;
+        const u = clamp(a.t / a.dur);
+        if (!a.fin) setP(s, lerp(a.from, a.to, a.lin ? u : 1 - Math.pow(1 - u, 1.6)));
+        else if (a.live) DESIGN.hooks[s.id](s.pv, s);
+        if (u >= 1 && !a.fin) { a.fin = true; if (!a.live) s.anim = null; if (s === cur) upPager(); }
+      }
+    },
+    go(s) {   // glide to a page: a soft, eased move; snapping pauses meanwhile so it cannot fight the glide
+      if (!s) return; const from = scrollY;
+      glide = { from, to: s.top, t0: performance.now(), dur: 1000 * clamp(0.65 + Math.abs(s.top - from) / VH * 0.15, 0.8, 1.5) };
+      document.documentElement.style.scrollSnapType = 'none';
+    },
+    glideStep() {
+      if (!glide) return; const k = clamp((performance.now() - glide.t0) / glide.dur);
+      scrollTo(0, lerp(glide.from, glide.to, eInOut(k))); if (k >= 1) endGlide();
+    },
+    open() {   // tap: play the page now if it is still waiting, otherwise go to the next page
+      const a = cur && cur.anim;
+      if (a && !a.fin) { if (a.t < 0) a.t = 0; return; }
+      const i = SC.indexOf(cur); if (SC[i + 1]) this.go(SC[i + 1]);
+    },
+  };
+})();
+
+/* ---------- boot + loop ---------- */
+function boot() {
+  document.body.appendChild(VHP); if (LITE) document.documentElement.classList.add('lite'); if (PAGES) document.documentElement.classList.add('pages');
+  collect(); bindText(); if (DESIGN.build) DESIGN.build();
+  buildNav(); setupLinks(); setupReveals(); tick(); Trail.resize();
+  if (REDUCED) {
+    document.documentElement.classList.add('rm');
+    $$('.stage, [data-tween]').forEach(e => e.style.setProperty('--p', 1));
+    if (DESIGN.reduced) DESIGN.reduced();
+  }
+  const ART_LIST = collectArt();
+  if (PAGES) Pages.init(ART_LIST);
+  measure();
+  /* re-measure only for real size changes, never for the address bar sliding in and out while scrolling */
+  let rz, lastW = innerWidth, lastSV = VHP.offsetHeight;
+  addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => {
+    const sv = VHP.offsetHeight; if (innerWidth === lastW && Math.abs(sv - lastSV) < 2) return;
+    lastW = innerWidth; lastSV = sv; measure(); Trail.resize(); }, 150); });
+  if (document.fonts) document.fonts.ready.then(measure);
+  $$('[data-open]').forEach(b => b.addEventListener('click', () => { if (PAGES) return Pages.open(); const y = DESIGN.openTarget ? DESIGN.openTarget() : SC[1].top; Auto.to(y, 5.5); }));
+  let last = performance.now();
+  (function loop(now) {
+    requestAnimationFrame(loop);
+    const dt = Math.min(0.05, (now - last) / 1000); last = now;
+    Auto.step(); Smooth.step(dt); if (PAGES) Pages.glideStep();
+    for (const tw of tweens) { if (tw.t > tw.dur) continue; tw.t += dt; tw.el.style.setProperty('--p', eInOut(clamp(tw.t / tw.dur)).toFixed(3)); }
+    const y = scrollY, moved = y !== ys || force; ys = y; force = false;   // animations follow the finger exactly; idle frames cost nothing
+    if (PAGES) { if (moved) Pages.sync(); Pages.step(dt); }
+    else if (!REDUCED && moved) for (const s of SC) {
+      if (!s.pinned || ys + VH < s.top - 60 || ys > s.top + s.h + 60) continue;
+      const p = progressOf(s), hook = DESIGN.hooks && DESIGN.hooks[s.id];
+      s.stage.style.setProperty('--p', p.toFixed(4)); upArt(ART_LIST, s.stage, p);
+      if (hook) hook(p, s);
+      if (s.exit) s.stage.style.opacity = (1 - smooth(0.9, 1, p)).toFixed(3);
+    }
+    if (moved) { upBackground(ys); upChrome(ys); }
+    if (CUR.on) {
+      const k = 1 - Math.exp(-dt * 12), nx = lerp(CUR.rx, CUR.x, k), ny = lerp(CUR.ry, CUR.y, k);
+      CUR.vx = nx - CUR.rx; CUR.lean = lerp(CUR.lean, clamp(CUR.vx * 2.2, -28, 28), 1 - Math.exp(-dt * 8)); CUR.rot += dt * 14; CUR.rx = nx; CUR.ry = ny;
+      $('#cur').style.transform = `translate(${CUR.rx}px,${CUR.ry}px)`; $('#dot').style.transform = `translate(${CUR.x}px,${CUR.y}px)`;
+      const r = $('#curRot'); if (r) r.setAttribute('transform', `rotate(${((CUR.rot + CUR.lean) % 360).toFixed(1)})`);
+    }
+    Trail.step(dt);
+    if (DESIGN.frame) DESIGN.frame(dt, now / 1000, moved);
+  })(last);
+}
+
+/* =====================================================================
+   PAPER GARDEN — fly through cut-paper layers, pop-up flowers & panels
+   ===================================================================== */
+const petal = (L, w) => `M0 0C${f1(w)} ${f1(-L * 0.3)} ${f1(w * 0.9)} ${f1(-L * 0.8)} 0 ${f1(-L)}C${f1(-w * 0.9)} ${f1(-L * 0.8)} ${f1(-w)} ${f1(-L * 0.3)} 0 0Z`;
+function flowerHole(x, y, s, rot) {
+  let d = ''; const n = 48;
+  for (let i = 0; i <= n; i++) { const a = rot + i / n * 6.2832, r = s * (0.55 + 0.45 * Math.abs(Math.cos(2.5 * (a - rot)))); d += (i ? 'L' : 'M') + f1(x + Math.cos(a) * r) + ' ' + f1(y + Math.sin(a) * r); }
+  return d + 'Z';
+}
+function leafAt(x, y, a, L, w) {
+  const ca = Math.cos(a), sa = Math.sin(a), T = (u, v) => [x + ca * u - sa * v, y + sa * u + ca * v], t = T(L, 0), c1 = T(L * 0.45, w), c2 = T(L * 0.45, -w), m = T(L * 0.8, 0);
+  return { leaf: `M${f1(x)} ${f1(y)}Q${f1(c1[0])} ${f1(c1[1])} ${f1(t[0])} ${f1(t[1])}Q${f1(c2[0])} ${f1(c2[1])} ${f1(x)} ${f1(y)}Z`, vein: `M${f1(x)} ${f1(y)}L${f1(m[0])} ${f1(m[1])}` };
+}
+const LAYERS = [
+  { col: '#a8b494', type: 'arch', d: 1.0, rot: -2 }, { col: '#f2d6cd', type: 'circle', d: 1.6, rot: 3 }, { col: '#f6efe4', type: 'arch', d: 2.2, rot: -3 },
+  { col: '#c9d1b9', type: 'circle', d: 2.8, rot: 2 }, { col: '#e8bfb2', type: 'arch', d: 3.4, rot: -2 }, { col: '#efe6d8', type: 'arch', d: 4.0, rot: 1 },
+];
+const B = { layers: [], endcard: null, builtFor: '' };
+function buildTunnel() {
+  const key = `${VW}x${VH}`; if (B.builtFor === key) return; B.builtFor = key;   // VH is the stable 100svh: the address bar never triggers a rebuild
+  const T = $('#tunnel'); B.layers.forEach(l => l.e.remove()); B.layers = [];
+  const M = 1.4, LW = Math.round(VW * M), LH = Math.round(VH * M), q = VW < 700 ? Math.min(devicePixelRatio || 1, 1.5) : 1, cx = LW / 2, cy = LH / 2 + VH * 0.02;
+  const aw = Math.min(VW * 0.64, VH * 0.42), ah = aw * 1.38;
+  LAYERS.forEach((Ly, i) => {
+    const R = rng(100 + i * 7); let win, edge;
+    if (Ly.type === 'circle') {
+      const r = aw * 0.56; win = `M${f1(cx - r)} ${f1(cy)}A${f1(r)} ${f1(r)} 0 1 0 ${f1(cx + r)} ${f1(cy)}A${f1(r)} ${f1(r)} 0 1 0 ${f1(cx - r)} ${f1(cy)}Z`;
+      edge = t => { const a = t * 6.2832; return [cx + Math.cos(a) * r, cy + Math.sin(a) * r, a + Math.PI]; };
+    } else {
+      const x0 = cx - aw / 2, x1 = cx + aw / 2, yb = cy + ah / 2, ysp = cy - ah / 2 + aw / 2, r = aw / 2;
+      win = `M${f1(x0)} ${f1(yb)}V${f1(ysp)}A${f1(r)} ${f1(r)} 0 0 1 ${f1(x1)} ${f1(ysp)}V${f1(yb)}Z`;
+      edge = t => { const a = Math.PI + t * Math.PI; return [cx + Math.cos(a) * r, ysp + Math.sin(a) * r, a + Math.PI]; };
+    }
+    let holes = '';
+    for (let k = 0; k < 8; k++) { const a = R() * 6.2832, rr = aw * (0.78 + R() * 0.6), s = 9 + R() * 16; holes += flowerHole(cx + Math.cos(a) * rr, cy + Math.sin(a) * rr * 1.15, s, R() * 6.28); }
+    let leaves = '', veins = '';
+    for (let k = 0; k < 11; k++) {
+      const [x, y, inward] = edge(k / 10 * (Ly.type === 'circle' ? 0.95 : 1));
+      const lf = leafAt(x, y, inward + (R() - 0.5) * 1.2, 22 + R() * 26, 7 + R() * 5); leaves += lf.leaf; veins += lf.vein;
+    }
+    const outer = `M0 0H${LW}V${LH}H0Z`, body = new Path2D(outer + win + holes), leafP = new Path2D(leaves);
+    // paint the paper once into a canvas (shadow included); scrolling then only moves/scales a finished image
+    const cv = document.createElement('canvas'); cv.width = Math.round(LW * q); cv.height = Math.round(LH * q);
+    cv.style.cssText = 'display:block;width:100%;height:100%';
+    const x = cv.getContext('2d'); x.scale(q, q);
+    x.shadowColor = 'rgba(70,45,35,.32)'; x.shadowBlur = 18 * q; x.shadowOffsetY = 12 * q;
+    x.fillStyle = Ly.col; x.fill(body, 'evenodd'); x.fill(leafP);
+    x.shadowColor = 'transparent'; x.fill(body, 'evenodd'); x.fill(leafP);
+    x.strokeStyle = 'rgba(90,70,50,.18)'; x.lineWidth = 1; x.stroke(leafP);
+    x.strokeStyle = 'rgba(90,70,50,.24)'; x.stroke(new Path2D(veins));
+    const e = document.createElement('div'); e.className = 'layer'; e.style.width = LW + 'px'; e.style.height = LH + 'px'; e.style.zIndex = 20 - i;
+    e.appendChild(cv);
+    T.appendChild(e); B.layers.push({ e, d: Ly.d, rot: Ly.rot });
+  });
+}
+function paperFlower(svg, back, front) {
+  let s = `<g fill="#c9d1b9" stroke="#7d8a6a" stroke-width=".8"><path d="${petal(46, 12)}" transform="rotate(130)"/><path d="${petal(40, 11)}" transform="rotate(-140)"/></g>`;
+  s += `<g fill="${back}" stroke="rgba(120,70,60,.35)" stroke-width=".8">${[0, 60, 120, 180, 240, 300].map(a => `<path d="${petal(42, 17)}" transform="rotate(${a + 30})"/>`).join('')}</g>`;
+  s += `<g fill="${front}" stroke="rgba(120,70,60,.35)" stroke-width=".8">${[0, 72, 144, 216, 288].map(a => `<path d="${petal(30, 13)}" transform="rotate(${a})"/>`).join('')}</g>`;
+  s += `<circle r="7" fill="#d8b77e" stroke="#a5824c" stroke-width=".8"/>`;
+  for (let k = 0; k < 8; k++) { const a = k / 8 * 6.28; s += `<circle cx="${f1(Math.cos(a) * 10)}" cy="${f1(Math.sin(a) * 10)}" r="1.4" fill="#a5824c"/>`; }
+  svg.innerHTML = s;
+}
+
+const DESIGN = {
+  chrome: { navLight: '#8a746c', navDark: '#8a746c', dotLight: '#b9705f', dotDark: '#b9705f' },
+  dust: { colors: ['#e8bfb2', '#b9705f', '#a8b494', '#bf9b62', '#f2d6cd'] },
+  build() {
+    document.documentElement.style.setProperty('--tex', paperTexture());
+    $('#curFlower').innerHTML = [0, 72, 144, 216, 288].map(a => `<path class="pe" d="${petal(14, 7)}" transform="rotate(${a})"/>`).join('');
+    B.endcard = $('#endcard');
+    // pop-up paper flowers around the names
+    const st = $('#b1stage'), spots = [[10, 13, 128, 0.18], [27, 6, 78, 0.24], [5, 31, 70, 0.3], [90, 87, 136, 0.2], [74, 94, 84, 0.27], [95, 68, 72, 0.33], [91, 10, 92, 0.36], [9, 89, 98, 0.4]];
+    const pal = [['#e8bfb2', '#f2d6cd'], ['#f2d6cd', '#fbf6ef'], ['#d99a8a', '#f2d6cd']], R = rng(9);
+    spots.forEach(([x, y, sz, s], i) => {
+      const svg = svgEl('svg', { class: 'pf sc', viewBox: '-50 -50 100 100', 'aria-hidden': 'true' }); svg.style.cssText = `left:${x}%;top:${y}%;--sz:${sz}px;--s:${s};--du:.16;--r:${Math.round((R() - 0.5) * 60)}deg`;
+      paperFlower(svg, ...pal[i % 3]); st.insertBefore(svg, st.firstChild);
+    });
+    // the closing bloom: three rings of petals that unfold with the scroll
+    const bl = $('#bloom'); let h = `<g fill="#c9d1b9" stroke="#7d8a6a" stroke-width=".8">${[45, 135, 225, 315].map(a => `<path d="${petal(120, 24)}" transform="rotate(${a})"/>`).join('')}</g>`;
+    [[10, 108, 30, '#e8bfb2', 0.05], [8, 80, 26, '#f2d6cd', 0.17], [6, 52, 18, '#fbf6ef', 0.29]].forEach(([n, L, w, col, s0]) => {
+      for (let k = 0; k < n; k++) h += `<path class="pt sc" d="${petal(L, w)}" fill="${col}" stroke="rgba(120,70,60,.3)" stroke-width=".8" style="--a:${(k * 360 / n + s0 * 100).toFixed(1)}deg;--s:${(s0 + k * 0.012).toFixed(3)};--du:.2"/>`;
+    });
+    h += `<circle r="16" fill="#d8b77e" stroke="#a5824c" stroke-width="1" class="sc" style="--s:.4;--du:.1;opacity:var(--e)"/>`;
+    bl.innerHTML = h;
+    splitChars($('#nm1'), NAMES[0], 0.14, 0.035, 0.1); splitChars($('#nm2'), NAMES[1], 0.42, 0.018, 0.1);
+    if (NAMES[0].length > 8) $('#nm1').classList.add('long'); if (NAMES[1].length > 8) $('#nm2').classList.add('long');
+    splitWords($('#invite'), N.invite, 0.68, 0.8, 0.06);
+    splitWords($('#verse'), N.verse, 0.18, 0.8, 0.07);
+  },
+  measure() { buildTunnel(); },
+  frame() {   // once the first scene has scrolled away, take the whole paper tunnel out of rendering
+    const s = scene('b0'), off = ys > s.top + s.h - VH + 2, T = $('#tunnel');
+    if (T.dataset.off !== String(off)) { T.dataset.off = off; T.style.display = off ? 'none' : ''; }
+  },
+  reduced() { $('#b0').hidden = true; },
+  openTarget() { const s = scene('b1'); return s.top + (s.h - VH) * 0.86; },
+  pages: { b0: { to: 1, dur: 4.6, delay: 1.1 } },
+  hooks: {
+    b0(p) {
+      const c = 3.6 * eInOut(smooth(0.04, 0.92, p));
+      for (const l of B.layers) {
+        const dist = l.d - c;
+        if (dist < 0.4 || p > 0.97) { if (l.e.style.visibility !== 'hidden') l.e.style.visibility = 'hidden'; continue; }   // never draw a passed, huge layer
+        l.e.style.visibility = 'visible';
+        l.e.style.transform = `translate(-50%,-50%) scale(${(1 / dist).toFixed(4)}) rotate(${(l.rot * dist).toFixed(2)}deg)`;
+        l.e.style.opacity = smooth(0.4, 0.72, dist).toFixed(3);
+      }
+      B.endcard.style.transform = `translate(-50%,-50%) scale(${(1 / (4.6 - c)).toFixed(4)})`;
+      const ce = smooth(2.5, 3.4, c); for (const k of B.endcard.children) k.style.opacity = ce.toFixed(3);
+      const o = (1 - smooth(0.02, 0.14, p)).toFixed(3); $('#b0top').style.opacity = o; $('#hint').style.opacity = o;
+    },
+    b3(p, s) { s.stage.style.setProperty('--in', smooth(0, 0.06, p).toFixed(3)); },
+  },
+};
+boot();
+</script>
+</body>
+</html>
