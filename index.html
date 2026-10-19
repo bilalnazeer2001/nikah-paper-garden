@@ -296,13 +296,13 @@ const N = {
   groomParents: 'Sulfiker Musthafa & Fathima',   // shown under the groom's name as "son of ..." ('' hides it)
   brideParents: 'Hassan & Khajeeda',             // shown under the bride's name as "daughter of ..." ('' hides it)
 
-  date: '2026-10-19',               // YYYY-MM-DD
-  time: '',                         // 24-hour, e.g. '11:30'. Leave '' until it is fixed.
+  date: '2026-10-21',               // YYYY-MM-DD
+  time: '11:00',                    // 24-hour, e.g. '11:30'. Leave '' until it is fixed.
   tz: '+05:30',                     // time zone of the venue (+05:30 = India)
 
   venue: {
     name: 'Methala Juma Masjid',
-    address: '',                    // e.g. 'MG Road, Kochi'
+    address: 'Odakkali',            // the place, shown after the masjid's name
     maps: '',                       // a Google Maps link; leave '' to hide the button
   },
   whatsapp: '',                     // number with country code, no + or spaces, e.g. '919876543210'
@@ -349,7 +349,7 @@ const D = (() => {
     dateDots: `${pad(Dd)} · ${pad(M)} · ${Y}`, dateShort: `${pad(Dd)}.${pad(M)}.${String(Y).slice(2)}`,
     dateLong: `${wd}, ${Dd} ${MO[M - 1]} ${Y}${hijri ? `<br><em>${hijri}</em>` : ''}`,
     timeLong: t12 ? esc(t12) : later,
-    venueLong: N.venue.name ? `${esc(N.venue.name)}${N.venue.address ? `<br><em>${esc(N.venue.address)}</em>` : ''}` : later,
+    venueLong: N.venue.name ? [N.venue.name, N.venue.address].filter(Boolean).map(esc).join(', ') : later,
     start: Date.parse(`${N.date}T${N.time || '00:00'}:00${N.tz}`),
   };
 })();

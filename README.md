@@ -1,5 +1,5 @@
 # Nikah invitation: Paper Garden
-**Hasanul Banna & Rahma Mol**, Monday 19 October 2026, Methala Juma Masjid
+**Hasanul Banna & Rahma Mol**, Wednesday 21 October 2026, 11:00 AM, Methala Juma Masjid, Odakkali
 
 Pastel cut paper. You fly through paper arches, then pop-up flowers, a pop-up date and a paper flower blooming.
 
